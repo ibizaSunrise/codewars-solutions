@@ -68,7 +68,7 @@ n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
 Note
 consecutive strings : follow one after another without an interruption
 
-## The Supermarket Queue
+##  06. The Supermarket Queue (6kyu)
 
 There is a queue for the self-checkout tills at the supermarket. Your task is write a function to calculate the total time required for all the customers to check out!
 
@@ -77,3 +77,11 @@ customers: an array of positive integers representing the queue. Each integer re
 n: a positive integer, the number of checkout tills.
 output
 The function should return an integer, the total time required.
+
+## 07. Convert string to camel case (6kyu)
+
+Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
+
+Examples
+"the-stealth-warrior" gets converted to "theStealthWarrior"
+"The_Stealth_Warrior" gets converted to "TheStealthWarrior"
