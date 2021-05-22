@@ -67,3 +67,13 @@ n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
 
 Note
 consecutive strings : follow one after another without an interruption
+
+## The Supermarket Queue
+
+There is a queue for the self-checkout tills at the supermarket. Your task is write a function to calculate the total time required for all the customers to check out!
+
+input
+customers: an array of positive integers representing the queue. Each integer represents a customer, and its value is the amount of time they require to check out.
+n: a positive integer, the number of checkout tills.
+output
+The function should return an integer, the total time required.
