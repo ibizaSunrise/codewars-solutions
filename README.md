@@ -86,7 +86,7 @@ Examples
 "the-stealth-warrior" gets converted to "theStealthWarrior"
 "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
 
-## Valid Parentheses (5 kyu)
+## 08. Valid Parentheses (5 kyu)
 
 Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
 Examples
@@ -95,7 +95,7 @@ Examples
 "("               =>  false
 "(())((()())())"  =>  true
 
-## Playing with digits (6 kyu)
+## 09. Playing with digits (6 kyu)
 
 Some numbers have funny properties. For example:
 
