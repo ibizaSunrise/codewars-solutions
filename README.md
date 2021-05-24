@@ -122,3 +122,75 @@ digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
 digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 
 ## 10. Write Number in Expanded Form (6 kyu)
+
+You will be given a number and you will need to return it as a string in Expanded Form. For example:
+
+expandedForm(12); // Should return '10 + 2'
+expandedForm(42); // Should return '40 + 2'
+expandedForm(70304); // Should return '70000 + 300 + 4'
+NOTE: All numbers will be whole numbers greater than 0.
+
+## 11. Human readable duration format (4kyu)
+
+Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
+
+The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.
+
+It is much easier to understand with an example:
+
+formatDuration(62)    // returns "1 minute and 2 seconds"
+formatDuration(3662)  // returns "1 hour, 1 minute and 2 seconds"
+For the purpose of this Kata, a year is 365 days and a day is 24 hours.
+
+Note that spaces are important.
+
+Detailed rules
+The resulting expression is made of components like 4 seconds, 1 year, etc. In general, a positive integer and one of the valid units of time, separated by a space. The unit of time is used in plural if the integer is greater than 1.
+
+The components are separated by a comma and a space (", "). Except the last component, which is separated by " and ", just like it would be written in English.
+
+A more significant units of time will occur before than a least significant one. Therefore, 1 second and 1 year is not correct, but 1 year and 1 second is.
+
+Different components have different unit of times. So there is not repeated units like in 5 seconds and 1 second.
+
+A component will not appear at all if its value happens to be zero. Hence, 1 minute and 0 seconds is not valid, but it should be just 1 minute.
+
+A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
+
+## 12. Sum of Intervals (4 kyu)
+
+Write a function called sumIntervals/sum_intervals() that accepts an array of intervals, and returns the sum of all the interval lengths. Overlapping intervals should only be counted once.
+
+Intervals
+Intervals are represented by a pair of integers in the form of an array. The first value of the interval will always be less than the second value. Interval example: [1, 5] is an interval from 1 to 5. The length of this interval is 4.
+
+Overlapping Intervals
+List containing overlapping intervals:
+
+[
+   [1,4],
+   [7, 10],
+   [3, 5]
+]
+The sum of the lengths of these intervals is 7. Since [1, 4] and [3, 5] overlap, we can treat the interval as [1, 5], which has a length of 4.
+
+Examples:
+sumIntervals( [
+   [1,2],
+   [6, 10],
+   [11, 15]
+] ); // => 9
+
+sumIntervals( [
+   [1,4],
+   [7, 10],
+   [3, 5]
+] ); // => 7
+
+sumIntervals( [
+   [1,5],
+   [10, 20],
+   [1, 6],
+   [16, 19],
+   [5, 11]
+] ); // => 19
