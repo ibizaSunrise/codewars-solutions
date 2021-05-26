@@ -243,3 +243,41 @@ Examples:
 spinWords("Hey fellow warriors") => "Hey wollef sroirraw" 
 spinWords("This is a test") => "This is a test" 
 spinWords("This is another test") => "This is rehtona test"
+
+## 17. Bit Counting (6kyu)
+Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
+
+Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
+
+## 18. Split Strings (6kyu)
+
+Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
+
+Examples:
+
+solution('abc') // should return ['ab', 'c_']
+solution('abcdef') // should return ['ab', 'cd', 'ef']
+
+## 19. Sum by Factors (4kyu)
+
+Given an array of positive or negative integers
+
+I= [i1,..,in]
+
+you have to produce a sorted array P of the form
+
+[ [p, sum of all ij of I for which p is a prime factor (p positive) of ij] ...]
+
+P will be sorted by increasing order of the prime numbers. The final result has to be given as a string in Java, C#, C, C++ and as an array of arrays in other languages.
+
+Example:
+
+I = [12, 15]; //result = [[2, 12], [3, 27], [5, 15]]
+[2, 3, 5] is the list of all prime factors of the elements of I, hence the result.
+
+Notes:
+
+It can happen that a sum is 0 if some numbers are negative!
+Example: I = [15, 30, -45] 5 divides 15, 30 and (-45) so 5 appears in the result, the sum of the numbers for which 5 is a factor is 0 so we have [5, 0] in the result amongst others.
+
+In Fortran - as in any other language - the returned string is not permitted to contain any redundant trailing whitespace: you can use dynamically allocated character strings.
