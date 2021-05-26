@@ -208,7 +208,7 @@ cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, mil
 // must return 0
 cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000}); 
 
-## 14. String incrementer
+## 14. String incrementer (5kyu)
 
 Your job is to write a function which increments a string, to create a new string.
 
@@ -225,3 +225,21 @@ foo0042 -> foo0043
 foo9 -> foo10
 
 foo099 -> foo100
+
+##  15. Shortest Word (7kyu)
+
+Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+
+## 16. Stop gninnipS My sdroW! (6kyu)
+
+Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (like the name of this kata).
+
+Strings passed in will consist of only letters and spaces.
+Spaces will be included only when more than one word is present.
+Examples:
+
+spinWords("Hey fellow warriors") => "Hey wollef sroirraw" 
+spinWords("This is a test") => "This is a test" 
+spinWords("This is another test") => "This is rehtona test"
